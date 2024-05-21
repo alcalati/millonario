@@ -1,0 +1,141 @@
+header{
+  width: 100%;
+  height: 10vh;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+main{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+
+.answer{
+  margin: auto;
+  padding: auto;
+  height: auto;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  display: flex;
+  max-height: fit-content;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  font-size: 10ems;
+}
+.selected{
+  margin: 10px;
+  padding: 10px;
+  height: 10px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check{
+  margin: 10px;
+  padding: 10px;
+  height: 10px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrong{
+  margin: 10px;
+  padding: 10px;
+  height: 10px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question{
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  max-height: auto;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: lightblue;
+  align-items: center;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.box{
+  padding: 4px;
+  height: 4px;
+  width: 4px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.actual{
+  padding: 4px;
+  height: 4px;
+  width: 4px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.passed{
+  padding: 4px;
+  height: 4px;
+  width: 4px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.notpassed{
+  padding: 4px;
+  height: 4px;
+  width: 4px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.progressBar{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
