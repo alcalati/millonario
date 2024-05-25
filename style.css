@@ -1,11 +1,29 @@
+*{
+  margin: 0%;
+  background-color: darkblue;
+  color: white;
+}
 header{
   width: 100%;
-  height: 10vh;
-  background: blue;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2{
+  border: solid 1px white;
+  color: white;
+  padding: 4px;
+  background-color: blue;
+  border-radius: 4px;
 }
 
 main{
@@ -17,14 +35,53 @@ main{
   flex-direction: column; */
 }
 
+.buttonBox{
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.buttons{
+  margin: 10px;
+  padding: 10px;
+  height: 8px;
+  width: auto;
+  border: solid 1px white;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  max-height: fit-content;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.buttonClicked{
+  margin: 10px;
+  padding: 10px;
+  height: 8px;
+  border: solid 1px white;
+  border-radius: 4px;
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  max-height: fit-content;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  font-size: 10ems;
+}
 
 .answer{
-  margin: auto;
-  padding: auto;
-  height: auto;
-  border: solid 1px black;
+  margin: 10px;
+  padding: 10px;
+  height: 10px;
+  border: solid 1px white;
   border-radius: 4px;
-  background-color: whitesmoke;
+  background-color: blue;
   display: flex;
   max-height: fit-content;
   justify-content: center;
@@ -36,29 +93,39 @@ main{
   margin: 10px;
   padding: 10px;
   height: 10px;
-  border: solid 1px black;
+  border: solid 1px white;
   border-radius: 4px;
   background-color: yellow;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: break-word;
+  font-size: 10ems;
 }
+
+
 .check{
   margin: 10px;
   padding: 10px;
   height: 10px;
-  border: solid 1px black;
+  border: solid 1px white;
+  color: black;
   border-radius: 4px;
   background-color: greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+
 .wrong{
   margin: 10px;
   padding: 10px;
   height: 10px;
-  border: solid 1px black;
+  border: solid 1px white;
+  color: black;
   border-radius: 4px;
   background-color: red;
   display: flex;
@@ -71,21 +138,21 @@ main{
   padding: 10px;
   display: inline-block;
   max-height: auto;
-  border: solid 1px black;
+  border: solid 1px white;
   border-radius: 4px;
-  background-color: lightblue;
+  background-color: darkblue;
   align-items: center;
   width: 100%;
   word-wrap: break-word;
 }
 
 .box{
-  padding: 4px;
-  height: 4px;
-  width: 4px;
+  padding: 6px;
+  height: 6px;
+  width: 6px;
   border: solid 1px black;
   border-radius: 4px;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,9 +160,9 @@ main{
 }
 
 .actual{
-  padding: 4px;
-  height: 4px;
-  width: 4px;
+  padding: 6px;
+  height: 6px;
+  width: 6px;
   border: solid 1px black;
   border-radius: 4px;
   background-color: yellow;
@@ -106,9 +173,9 @@ main{
 }
 
 .passed{
-  padding: 4px;
-  height: 4px;
-  width: 4px;
+  padding: 6px;
+  height: 6px;
+  width: 6px;
   border: solid 1px black;
   border-radius: 4px;
   background-color: greenyellow;
@@ -116,6 +183,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
 }
 
 .notpassed{
@@ -138,4 +206,49 @@ main{
   align-items: center;
   flex-direction: row;
   width: 100%;
+}
+
+/* Contenedor de la imagen */
+header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen con efectos CSS */
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Transición suave para transformaciones y filtros */
+  filter: brightness(0.8); /* Filtro inicial para la imagen */
+}
+
+/* Efectos al hacer hover */
+header img:hover {
+  transform: scale(1.05); /* Zoom suave al hacer hover */
+  filter: brightness(1); /* Brillo completo al hacer hover */
+}
+
+/* Sombras */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Sombra interior para un efecto de viñeta */
+  pointer-events: none;
+}
+
+.answer:hover {
+  filter: brightness(1.9) saturate(1.9);
+}
+
+
+.buttons:hover {
+  filter: brightness(1.9) saturate(1.9);
 }
